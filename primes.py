@@ -3,8 +3,8 @@
 
 def primes(number_of_primes):
     list = []
-    num = 0
-    ctr = 0
+    num = 1
+    ctr = 1
 
     while ctr <= number_of_primes:
         num = nextPrime(num)
@@ -19,7 +19,7 @@ def nextPrime(num):
 
         num += 1
 
-        for i in range (2, num):
+        for i in range (1, num):
             if num % i == 0:
                 break
 
